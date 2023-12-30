@@ -20,4 +20,4 @@ A Minecraft plugin that enhances Armor Stands by providing them with an inventor
 - To give the Armor stand an Armor piece, simply right-click it.
 - To obtain an Armor piece, right-click it without an Armor piece and click on the desired Armor piece.
 
-Please **do not** report bugs in the reviews. Create a GitHub Issue and leave a positive rating [here](https://www.spigotmc.org/resources/armorstandviewer.114195/)https://www.spigotmc.org/resources/armorstandviewer.114195/) :)
+Please **do not** report bugs in the reviews. Create a GitHub Issue and leave a positive rating [here](https://www.spigotmc.org/resources/armorstandviewer.114195/) :)
