@@ -13,7 +13,7 @@ public final class ArmorStandViewer extends JavaPlugin {
     public void onEnable() {
         new UpdateChecker(this, 114195).getVersion(version -> {
             if (!this.getDescription().getVersion().equals(version)) {
-                getLogger().info("There is a new update available.");
+                getLogger().warning("There is a new update available.");
             }
         });
 
