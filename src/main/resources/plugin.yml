@@ -1,0 +1,4 @@
+name: ArmorStandViewer
+version: '${project.version}'
+main: de.syntaxxerror.armorstandviewer.ArmorStandViewer
+api-version: '1.20'

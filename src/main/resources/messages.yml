@@ -1,0 +1,7 @@
+messages:
+  inventory-full: "&cYour inventory is full!"
+  gui-title: "&7Armor Stand Viewer"
+  no-item: "&cNo Item."
+sounds:
+  success: "UI_BUTTON_CLICK"
+  error: "ENTITY_VILLAGER_NO"
