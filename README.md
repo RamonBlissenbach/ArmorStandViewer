@@ -1,24 +1,23 @@
-[CENTER][B][U][SIZE=4]Armor stand
-Viewer[/SIZE]
+# Armor Stand Viewer
 
-[ATTACH=full]806936[/ATTACH][/U][/B]
+![Armor Stand Viewer](https://www.spigotmc.org/attachments/upload_2023-12-30_11-21-48-png.806936/)
 
-A Minecraft plugin that provides Armor Stands with an inventory for precisely examining items.
+A Minecraft plugin that enhances Armor Stands by providing them with an inventory for precise item examination.
 
-[U]Features:[/U]
+## Features:
 - 100% Configurable
 - Permission Support
-- Good Performance
+- Optimal Performance
 - Full Item Meta Support
 
-[U]How to install:[/U]
+## How to Install:
 1. Download the plugin.
 2. Place it in your Plugins folder.
-3. You're finished!
+3. You're done!
 
-[U]How to use:[/U]
-Right-click an Armorstand without an Armor piece in your hand, and the GUI will open.
-To give the Armor stand an Armor piece, simply right-click it.
-To get an Armor piece, right-click it without an Armor piece and click on the Armor piece you want to obtain.
+## How to Use:
+- Right-click an Armorstand without an Armor piece in your hand, and the GUI will open.
+- To give the Armor stand an Armor piece, simply right-click it.
+- To obtain an Armor piece, right-click it without an Armor piece and click on the desired Armor piece.
 
-Please [B]don't[/B] report bugs in the reviews. Create a GitHub Issue and leave a positive rating here :)[/CENTER]
+Please **do not** report bugs in the reviews. Create a GitHub Issue and leave a positive rating [here](link-to-your-repo) :)
