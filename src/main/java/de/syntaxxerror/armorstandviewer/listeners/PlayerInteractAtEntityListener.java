@@ -14,6 +14,10 @@ public class PlayerInteractAtEntityListener implements Listener {
     private final ConfigManager configManager;
     private boolean requirePermission;
     private String permission;
+    /***
+     * Constructor for PlayerInteractAtEntityListener
+     * @param configManager ConfigManager to load settings
+     */
     public PlayerInteractAtEntityListener(ConfigManager configManager) {
         this.configManager = configManager;
         requirePermission = configManager.getSettingsConfig().getBoolean("permission.required");
@@ -21,6 +25,10 @@ public class PlayerInteractAtEntityListener implements Listener {
     }
 
 
+    /***
+     * Called when a player interacts with an entity
+     * @param event PlayerInteractAtEntityEvent
+     */
     @EventHandler
     public void onPlayerInteractAtEntity(PlayerInteractAtEntityEvent event) {
         if (event.getRightClicked().getType().equals(EntityType.ARMOR_STAND)) {

@@ -19,6 +19,10 @@ public class ArmorStandManager {
     private final Sound successSound;
     private final Sound errorSound;
 
+    /***
+     * Constructor for ArmorStandManager
+     * @param configManager ConfigManager to load messages and sounds
+     */
     public ArmorStandManager(ConfigManager configManager) {
         this.configManager = configManager;
         this.inventoryFull = configManager.getMessagesConfig().getString("messages.inventory-full").replaceAll("&", "§");
@@ -29,7 +33,11 @@ public class ArmorStandManager {
         this.errorSound = Sound.valueOf(configManager.getMessagesConfig().getString("sounds.error"));
     }
 
-
+    /***
+     * Opens the ArmorStandEditorGui (The main feature of this plugin)
+     * @param player Player to open the gui
+     * @param armorStand ArmorStand to edit
+     */
     public void openArmorStandEditorGui(Player player, ArmorStand armorStand) {
         ItemStack helmet = armorStand.getEquipment().getHelmet();
         ItemStack chestplate = armorStand.getEquipment().getChestplate();
@@ -75,6 +83,11 @@ public class ArmorStandManager {
         gui.open(player);
     }
 
+    /***
+     * Checks if the given material is an armor piece
+     * @param material Material to check
+     * @return true if the material is an armor piece
+     */
     public boolean isArmor(Material material) {
         switch (material) {
             case DIAMOND_HELMET:
@@ -103,6 +116,12 @@ public class ArmorStandManager {
         }
     }
 
+    /***
+     * Gives the player the selected armor stand item
+     * @param player Player to give the item
+     * @param armorStand ArmorStand to get the item from
+     * @param item Selected item to give to the player
+     */
     public void givePlayerArmorStandItem(Player player, ArmorStand armorStand, String item) {
         if (player.getInventory().firstEmpty() == -1) {
             player.getOpenInventory().close();

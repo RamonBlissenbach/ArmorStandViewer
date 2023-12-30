@@ -18,12 +18,21 @@ public class ConfigManager {
     private final File messagesConfigFile;
     private final File settingsConfigFile;
 
+    /***
+     * Constructor for ConfigManager
+     * @param plugin JavaPlugin to load the config files
+     */
     public ConfigManager(JavaPlugin plugin) {
         this.plugin = plugin;
         messagesConfigFile = new File(plugin.getDataFolder(), "messages.yml");
         settingsConfigFile = new File(plugin.getDataFolder(), "config.yml");
     }
 
+    /***
+     * Creates a new ConfigManager and saves the default config files
+     * @param plugin JavaPlugin to load the config files
+     * @return ConfigManager
+     */
     public static ConfigManager createSaveAndLoad(JavaPlugin plugin) {
         ConfigManager manager = new ConfigManager(plugin);
         manager.saveDefaults();
@@ -31,16 +40,24 @@ public class ConfigManager {
         return manager;
     }
 
+    /***
+     * Saves the config files
+     */
     private void save() {
         saveMessagesConfig();
         saveSettingsConfig();
     }
-
+    /***
+     * Reloads the config files
+     */
     public void reload() {
         reloadMessagesConfig();
         reloadSettingsConfig();
     }
 
+    /***
+     * Reloads the messages config file
+     */
     public void reloadMessagesConfig() {
         try {
             messagesConfig.load(new File(plugin.getDataFolder(), "messages.yml"));
@@ -49,6 +66,9 @@ public class ConfigManager {
         }
     }
 
+    /***
+     * Reloads the settings config file
+     */
     public void reloadSettingsConfig() {
         try {
             settingsConfig.load(new File(plugin.getDataFolder(), "config.yml"));
@@ -57,6 +77,9 @@ public class ConfigManager {
         }
     }
 
+    /***
+     * Saves the default config files
+     */
     public void saveDefaults() {
         if (!messagesConfigFile.exists()) {
             messagesConfigFile.getParentFile().mkdirs();
@@ -69,6 +92,9 @@ public class ConfigManager {
         }
     }
 
+    /***
+     * Saves the messages config file
+     */
     public void saveMessagesConfig() {
         try {
             messagesConfig.save(messagesConfigFile);
@@ -77,6 +103,9 @@ public class ConfigManager {
         }
     }
 
+    /***
+     * Saves the settings config file
+     */
     public void saveSettingsConfig() {
         try {
             settingsConfig.save(settingsConfigFile);
@@ -85,10 +114,18 @@ public class ConfigManager {
         }
     }
 
+    /***
+     * Returns the messages config file
+     * @return FileConfiguration
+     */
     public FileConfiguration getMessagesConfig() {
         return messagesConfig;
     }
 
+    /***
+     * Returns the settings config file
+     * @return FileConfiguration
+     */
     public FileConfiguration getSettingsConfig() {
         return settingsConfig;
     }
