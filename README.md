@@ -1,6 +1,6 @@
 # Armor Stand Viewer
 
-![Armor Stand Viewer](https://www.spigotmc.org/attachments/upload_2023-12-30_11-21-48-png.806936/)
+![Armor Stand Viewer](https://i.ibb.co/sJthrvhP/upload-2023-12-30-11-21-48.png)
 
 A Minecraft plugin that enhances Armor Stands by providing them with an inventory for precise item examination.
 
